@@ -1,4 +1,4 @@
-# Day 1 Q&A
+# Day 3 Q&A
 
 ## Question 
 if confused on something that u did and didnt post in the chat 
