@@ -1,0 +1,643 @@
+
+
+<!DOCTYPE html>
+
+
+<html >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Q&amp;A day 2 &#8212; GitHub Flow and CS Thinking</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'qa/day2';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Day 3 Q&amp;A" href="day3.html" />
+    <link rel="prev" title="Day 1 Q&amp;A" href="day1.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="None"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    <p class="title logo__title">GitHub Flow and CS Thinking</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    GitHub Flow and Computational Thinking
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../homework/day1.html">Day 1 Homework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/day2.html">Homework and Prepare for next class</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/day3.html">Extending Your Analysis</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Thinking and Learning Tips</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tl/day1.html">Reading Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tl/day2.html">Parsing Assignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tl/day3.html">Focusing On What is Important</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Q &amp; A</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">Day 1 Q&amp;A</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Q&amp;A day 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">Day 3 Q&amp;A</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/qa/day2.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Q&A day 2</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-any-internship-at-companies-that-could-lead-you-to-a-future-job-there">Are there any internship at companies that could lead you to a future job there?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cs-bs-ds-bs-double-major-doable">CS bs &amp; DS bs Double Major doable?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-networking-opportunities">What are the networking opportunities?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-there-a-cybersecurity-minor">Is there a cybersecurity minor?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-your-favorite-csc-class-you-ve-taken">What’s your favorite CSC class you’ve taken?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-languages-will-we-learn">How many languages will we learn?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-they-call-python-python-snake">Why do they call “Python” “Python”??? Snake?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-the-best-way-to-get-prepared-when-starting-off-this-fall">What’s the best way to get prepared when starting off this Fall?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#any-programming-languages-i-should-start-to-learn-concepts-to-familiarize-myself-with-etc">Any programming languages I should start to learn? Concepts to familiarize myself with? Etc.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-the-best-route-to-take-while-choosing-courses-for-a-smooth-experience-particularly-for-ds-cs">‟What’s the best route to take while choosing courses for a smooth experience? Particularly for DS/CS”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-do-we-take-the-212-class-is-it-junior-or-sophomore-year">‟when do we take the 212 class is it junior or sophomore year”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whats-the-hardest-part-abt-learning-this-major-freshman-year-and-how-hard-is-calculus-compared-to-geometry-algebra-2-etc">‟what’s the hardest part abt learning this major freshman year and how hard is calculus compared to geometry algebra 2 etc ”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-hardest-coding-language-that-we-are-going-to-learn">‟what is the hardest coding language, that we are going to learn”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-what-jobs-would-a-bs-degree-be-better-than-a-ba">‟In what jobs would a BS degree be better than a BA”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#would-it-be-to-hard-to-double-major-in-computer-science-and-computer-engineer">Would it be to hard to double major in computer science and computer engineer?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#could-you-ever-get-a-job-at-an-elite-company-like-google-or-microsoft-straight-out-of-college">Could you ever get a job at an elite company like google or Microsoft straight out of college</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-cool-places-you-can-study-abroad-for-computer-science">What are cool places you can study abroad for computer science?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#could-you-get-a-computer-science-b-s-degree-if-your-bad-at-math-or-you-suggest-doing-b-a">Could you get a computer science b.s degree if your bad at math or you suggest doing b.a?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-long-did-it-take-you-to-get-your-phd">How long did it take you to get your PHD?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#could-ai-ever-take-over-computer-science-jobs-in-the-near-future">Could ai ever take over computer science jobs in the near future?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-are-final-exams-structured-for-computer-science">How are final exams structured for computer science?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-would-people-choose-to-have-a-ba-computer-science-degree-over-bs">Why would people choose to have a BA Computer Science degree over BS?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-students-get-jobs-right-after-getting-their-cs-degree">How many students get jobs right after getting their CS degree?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#do-you-get-into-a-higher-course-as-time-moves-on-like-csc106-to-csc110">Do you get into a higher course as time moves on? like csc106 to csc110?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-of-all-these-codes-that-we-learned-about-does-the-average-person-memorize">How much of all these codes that we learned about does the average person memorize?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-we-making-with-this-code">What are we making with this code?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-python">What is the purpose of python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-you-code-more-efficiently">How can you code more efficiently?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-there-a-lot-of-occasions-in-coding-where-you-have-to-write-in-the-for-example-earlier-in-the-bar-graph-kind-bar">Is there a lot of occasions in coding where you have to write in the () for example earlier in the bar graph (kind = ‘bar’)?</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="q-a-day-2">
+<h1>Q&amp;A day 2<a class="headerlink" href="#q-a-day-2" title="Permalink to this headline">#</a></h1>
+<section id="are-there-any-internship-at-companies-that-could-lead-you-to-a-future-job-there">
+<h2>Are there any internship at companies that could lead you to a future job there?<a class="headerlink" href="#are-there-any-internship-at-companies-that-could-lead-you-to-a-future-job-there" title="Permalink to this headline">#</a></h2>
+<p>Answer: Yes, most of the time when you get an intership at a company, and you do great and they like you they
+could offer you a fulltime position.</p>
+</section>
+<section id="cs-bs-ds-bs-double-major-doable">
+<h2>CS bs &amp; DS bs Double Major doable?<a class="headerlink" href="#cs-bs-ds-bs-double-major-doable" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="what-are-the-networking-opportunities">
+<h2>What are the networking opportunities?<a class="headerlink" href="#what-are-the-networking-opportunities" title="Permalink to this headline">#</a></h2>
+<p>Answer: - There are career fairs atleast 2 times a semester, and the university will send you emails about them so look out for that
+- There are organizations on campus for example The National Society Of Black Engineers(NSBE)
+- Try to also network with your Professors.</p>
+</section>
+<section id="is-there-a-cybersecurity-minor">
+<h2>Is there a cybersecurity minor?<a class="headerlink" href="#is-there-a-cybersecurity-minor" title="Permalink to this headline">#</a></h2>
+<p>Answer: Yes, you can ask your advisor for more information on that minor, what you have to do, the workload and
+how it may or may not affect your graduation year.</p>
+</section>
+<section id="what-s-your-favorite-csc-class-you-ve-taken">
+<h2>What’s your favorite CSC class you’ve taken?<a class="headerlink" href="#what-s-your-favorite-csc-class-you-ve-taken" title="Permalink to this headline">#</a></h2>
+<p>Answer: For me personally I would say CSC 211, because I personally think I learned the most and
+I felt the most like a actual programmer in that class.</p>
+</section>
+<section id="how-many-languages-will-we-learn">
+<h2>How many languages will we learn?<a class="headerlink" href="#how-many-languages-will-we-learn" title="Permalink to this headline">#</a></h2>
+<p>Answer: 4 or 5 depending on what classes you take. They are HTML, CSS, Python, C++ and they maybe Rust and Java depending on the classes
+you take and what the professor decides to choose.</p>
+</section>
+<section id="why-do-they-call-python-python-snake">
+<h2>Why do they call “Python” “Python”??? Snake?<a class="headerlink" href="#why-do-they-call-python-python-snake" title="Permalink to this headline">#</a></h2>
+<p>Answer: The person that first started implementing python Van Rossum based the programming language name off a
+1970s comedy series called Monty Python’s Flying Circus.</p>
+</section>
+<section id="what-s-the-best-way-to-get-prepared-when-starting-off-this-fall">
+<h2>What’s the best way to get prepared when starting off this Fall?<a class="headerlink" href="#what-s-the-best-way-to-get-prepared-when-starting-off-this-fall" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="any-programming-languages-i-should-start-to-learn-concepts-to-familiarize-myself-with-etc">
+<h2>Any programming languages I should start to learn? Concepts to familiarize myself with? Etc.<a class="headerlink" href="#any-programming-languages-i-should-start-to-learn-concepts-to-familiarize-myself-with-etc" title="Permalink to this headline">#</a></h2>
+<p>Answer: Honestly, depending on what class you are taking you can watch youtube videos about
+the basics of python if you are taking CSC 110. And if you are taking CSC 106 you can watch khan academy videos about
+the basics of javascript.</p>
+</section>
+<section id="what-s-the-best-route-to-take-while-choosing-courses-for-a-smooth-experience-particularly-for-ds-cs">
+<h2>‟What’s the best route to take while choosing courses for a smooth experience? Particularly for DS/CS”<a class="headerlink" href="#what-s-the-best-route-to-take-while-choosing-courses-for-a-smooth-experience-particularly-for-ds-cs" title="Permalink to this headline">#</a></h2>
+<p>Answer: There is a path already set for you to follow normally to graduate on time, if you talk to your academic adviors they will
+walk you through what you need to do and what path will be the smoothest. Try to make sure you take more than 12 credits
+a semester so you can graduate on time.</p>
+</section>
+<section id="when-do-we-take-the-212-class-is-it-junior-or-sophomore-year">
+<h2>‟when do we take the 212 class is it junior or sophomore year”<a class="headerlink" href="#when-do-we-take-the-212-class-is-it-junior-or-sophomore-year" title="Permalink to this headline">#</a></h2>
+<p>Answer: - If you are taking CSC 110 in fall, then you will be taking CSC 211 in spring and CSC 212 will be in fall of your sophormore year
+- If you are taking CSC 106 in fall, then you will be taking CSC 110 in spring, CSC 211 in fall of your sophormore year and
+CSC 212 in spring of your sophormore year.</p>
+</section>
+<section id="whats-the-hardest-part-abt-learning-this-major-freshman-year-and-how-hard-is-calculus-compared-to-geometry-algebra-2-etc">
+<h2>‟what’s the hardest part abt learning this major freshman year and how hard is calculus compared to geometry algebra 2 etc ”<a class="headerlink" href="#whats-the-hardest-part-abt-learning-this-major-freshman-year-and-how-hard-is-calculus-compared-to-geometry-algebra-2-etc" title="Permalink to this headline">#</a></h2>
+<p>Answer: Honestly the hardest part about freshman year is time management and making yourself do the work,
+because the classes for CS is relatively easy your first year.</p>
+</section>
+<section id="what-is-the-hardest-coding-language-that-we-are-going-to-learn">
+<h2>‟what is the hardest coding language, that we are going to learn”<a class="headerlink" href="#what-is-the-hardest-coding-language-that-we-are-going-to-learn" title="Permalink to this headline">#</a></h2>
+<p>Answer: The hardest language honestly depends on you, because everyone’s brain works different and you might pick up one language easily
+while struggling a bit for others.</p>
+</section>
+<section id="in-what-jobs-would-a-bs-degree-be-better-than-a-ba">
+<h2>‟In what jobs would a BS degree be better than a BA”<a class="headerlink" href="#in-what-jobs-would-a-bs-degree-be-better-than-a-ba" title="Permalink to this headline">#</a></h2>
+<p>Answer: Most companies and employers view the degrees as the same, but people that want to focus more in backend development BS might
+be better, while BA could be a little better for people that want to focus on frontend. But you could do either front or backend
+with BA or BS.</p>
+</section>
+<section id="would-it-be-to-hard-to-double-major-in-computer-science-and-computer-engineer">
+<h2>Would it be to hard to double major in computer science and computer engineer?<a class="headerlink" href="#would-it-be-to-hard-to-double-major-in-computer-science-and-computer-engineer" title="Permalink to this headline">#</a></h2>
+<p>Answer: Honestly I would sa</p>
+</section>
+<section id="could-you-ever-get-a-job-at-an-elite-company-like-google-or-microsoft-straight-out-of-college">
+<h2>Could you ever get a job at an elite company like google or Microsoft straight out of college<a class="headerlink" href="#could-you-ever-get-a-job-at-an-elite-company-like-google-or-microsoft-straight-out-of-college" title="Permalink to this headline">#</a></h2>
+<p>Answer: Yes, I know people that actually have gotten a job at Microsoft straight out of college.
+If you get an internship with one of those companies, your chance of getting a job with them is increased.</p>
+</section>
+<section id="what-are-cool-places-you-can-study-abroad-for-computer-science">
+<h2>What are cool places you can study abroad for computer science?<a class="headerlink" href="#what-are-cool-places-you-can-study-abroad-for-computer-science" title="Permalink to this headline">#</a></h2>
+<p>Answer: Ask your advisor about IEP(International engineering program)</p>
+</section>
+<section id="could-you-get-a-computer-science-b-s-degree-if-your-bad-at-math-or-you-suggest-doing-b-a">
+<h2>Could you get a computer science b.s degree if your bad at math or you suggest doing b.a?<a class="headerlink" href="#could-you-get-a-computer-science-b-s-degree-if-your-bad-at-math-or-you-suggest-doing-b-a" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="how-long-did-it-take-you-to-get-your-phd">
+<h2>How long did it take you to get your PHD?<a class="headerlink" href="#how-long-did-it-take-you-to-get-your-phd" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="could-ai-ever-take-over-computer-science-jobs-in-the-near-future">
+<h2>Could ai ever take over computer science jobs in the near future?<a class="headerlink" href="#could-ai-ever-take-over-computer-science-jobs-in-the-near-future" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="how-are-final-exams-structured-for-computer-science">
+<h2>How are final exams structured for computer science?<a class="headerlink" href="#how-are-final-exams-structured-for-computer-science" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="why-would-people-choose-to-have-a-ba-computer-science-degree-over-bs">
+<h2>Why would people choose to have a BA Computer Science degree over BS?<a class="headerlink" href="#why-would-people-choose-to-have-a-ba-computer-science-degree-over-bs" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="how-many-students-get-jobs-right-after-getting-their-cs-degree">
+<h2>How many students get jobs right after getting their CS degree?<a class="headerlink" href="#how-many-students-get-jobs-right-after-getting-their-cs-degree" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="do-you-get-into-a-higher-course-as-time-moves-on-like-csc106-to-csc110">
+<h2>Do you get into a higher course as time moves on? like csc106 to csc110?<a class="headerlink" href="#do-you-get-into-a-higher-course-as-time-moves-on-like-csc106-to-csc110" title="Permalink to this headline">#</a></h2>
+<p>Answer: Yes, your first course for this fall should be CSC106 or CSC110. Then if you pass those classes and Math 180 you get to
+move on to CSC 211.</p>
+</section>
+<section id="how-much-of-all-these-codes-that-we-learned-about-does-the-average-person-memorize">
+<h2>How much of all these codes that we learned about does the average person memorize?<a class="headerlink" href="#how-much-of-all-these-codes-that-we-learned-about-does-the-average-person-memorize" title="Permalink to this headline">#</a></h2>
+<p>Answer: As you work through computer science you brain remembers a lot of the code, but if you do not there are
+documentation out there that can tell you about the code and what they do.</p>
+</section>
+<section id="what-are-we-making-with-this-code">
+<h2>What are we making with this code?<a class="headerlink" href="#what-are-we-making-with-this-code" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="what-is-the-purpose-of-python">
+<h2>What is the purpose of python<a class="headerlink" href="#what-is-the-purpose-of-python" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="how-can-you-code-more-efficiently">
+<h2>How can you code more efficiently?<a class="headerlink" href="#how-can-you-code-more-efficiently" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+<section id="is-there-a-lot-of-occasions-in-coding-where-you-have-to-write-in-the-for-example-earlier-in-the-bar-graph-kind-bar">
+<h2>Is there a lot of occasions in coding where you have to write in the () for example earlier in the bar graph (kind = ‘bar’)?<a class="headerlink" href="#is-there-a-lot-of-occasions-in-coding-where-you-have-to-write-in-the-for-example-earlier-in-the-bar-graph-kind-bar" title="Permalink to this headline">#</a></h2>
+<p>Answer:</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./qa"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="day1.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Day 1 Q&amp;A</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="day3.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Day 3 Q&amp;A</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#are-there-any-internship-at-companies-that-could-lead-you-to-a-future-job-there">Are there any internship at companies that could lead you to a future job there?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cs-bs-ds-bs-double-major-doable">CS bs &amp; DS bs Double Major doable?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-the-networking-opportunities">What are the networking opportunities?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-there-a-cybersecurity-minor">Is there a cybersecurity minor?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-your-favorite-csc-class-you-ve-taken">What’s your favorite CSC class you’ve taken?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-languages-will-we-learn">How many languages will we learn?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-do-they-call-python-python-snake">Why do they call “Python” “Python”??? Snake?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-the-best-way-to-get-prepared-when-starting-off-this-fall">What’s the best way to get prepared when starting off this Fall?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#any-programming-languages-i-should-start-to-learn-concepts-to-familiarize-myself-with-etc">Any programming languages I should start to learn? Concepts to familiarize myself with? Etc.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-s-the-best-route-to-take-while-choosing-courses-for-a-smooth-experience-particularly-for-ds-cs">‟What’s the best route to take while choosing courses for a smooth experience? Particularly for DS/CS”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#when-do-we-take-the-212-class-is-it-junior-or-sophomore-year">‟when do we take the 212 class is it junior or sophomore year”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#whats-the-hardest-part-abt-learning-this-major-freshman-year-and-how-hard-is-calculus-compared-to-geometry-algebra-2-etc">‟what’s the hardest part abt learning this major freshman year and how hard is calculus compared to geometry algebra 2 etc ”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-hardest-coding-language-that-we-are-going-to-learn">‟what is the hardest coding language, that we are going to learn”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#in-what-jobs-would-a-bs-degree-be-better-than-a-ba">‟In what jobs would a BS degree be better than a BA”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#would-it-be-to-hard-to-double-major-in-computer-science-and-computer-engineer">Would it be to hard to double major in computer science and computer engineer?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#could-you-ever-get-a-job-at-an-elite-company-like-google-or-microsoft-straight-out-of-college">Could you ever get a job at an elite company like google or Microsoft straight out of college</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-cool-places-you-can-study-abroad-for-computer-science">What are cool places you can study abroad for computer science?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#could-you-get-a-computer-science-b-s-degree-if-your-bad-at-math-or-you-suggest-doing-b-a">Could you get a computer science b.s degree if your bad at math or you suggest doing b.a?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-long-did-it-take-you-to-get-your-phd">How long did it take you to get your PHD?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#could-ai-ever-take-over-computer-science-jobs-in-the-near-future">Could ai ever take over computer science jobs in the near future?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-are-final-exams-structured-for-computer-science">How are final exams structured for computer science?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-would-people-choose-to-have-a-ba-computer-science-degree-over-bs">Why would people choose to have a BA Computer Science degree over BS?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-many-students-get-jobs-right-after-getting-their-cs-degree">How many students get jobs right after getting their CS degree?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#do-you-get-into-a-higher-course-as-time-moves-on-like-csc106-to-csc110">Do you get into a higher course as time moves on? like csc106 to csc110?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-much-of-all-these-codes-that-we-learned-about-does-the-average-person-memorize">How much of all these codes that we learned about does the average person memorize?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-are-we-making-with-this-code">What are we making with this code?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-the-purpose-of-python">What is the purpose of python</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-can-you-code-more-efficiently">How can you code more efficiently?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-there-a-lot-of-occasions-in-coding-where-you-have-to-write-in-the-for-example-earlier-in-the-bar-graph-kind-bar">Is there a lot of occasions in coding where you have to write in the () for example earlier in the bar graph (kind = ‘bar’)?</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sarah M Brown
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
