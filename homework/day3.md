@@ -4,9 +4,9 @@
 2. extend your analysis in one of the three options below
 3. Prepare for class tomorrow by creating a GitHub account or adding your URI email to your existing one. Make sure you know (or have saved) your password. 
 
-``````{tab-set}
+<!-- ``````{tab-set}
 
-```{tab-item} Experiment with plots
+```{tab-item} Experiment with plots -->
 
 ## Extension Option A: customize your plots
 
@@ -14,9 +14,9 @@
 2. customize your pandas plots to be styled for a poster and use a colorblind friendly color palett
 3. use seaborn's [catplot](https://seaborn.pydata.org/generated/seaborn.catplot.html) to make your plot of the distribution of the scores more like the ones in the article (two separate subplots with African-American on the top and Caucasion on the bottom)
 4. Make 2 additional plots of different types and include 3 new customizations
-```
+<!-- ```
 
-```{tab-item} Practice with Statistics
+```{tab-item} Practice with Statistics -->
 ## Extension Option B: more statistics 
 
 
@@ -28,10 +28,10 @@
 1. Compute the percent correct predictions of the compas algorithm per race and for high/low scores
 
 
-
+<!-- 
 ```
 
-````{tab-item} Tutorial on functions
+````{tab-item} Tutorial on functions -->
 ## Extension Option C: more criticism of COMPAS 
 (tutorial)
 
@@ -45,7 +45,7 @@ Feldman et al. adapted a fairness metric from this  principle. For our applicati
 ### Functions in Python
 
 We define functions in Python like this: 
-```
+```Python
 def name_of_function(argument): # signature of function
     '''
     decription of function
@@ -62,6 +62,81 @@ def name_of_function(argument): # signature of function
     #body of function
     value = argument *3
     return value
-````
+```
 
-``````
+Write a function to print a greeting like this: 
+
+
+Hello World! 
+
+```
+def greeting(name):
+    '''
+    greet a specific person
+
+    Parameters
+    ----------
+    name: string
+        name of person to greet
+    
+    '''
+    print('hello', name)
+```
+
+
+Now try to check if it prints the right thing with 
+
+```
+assert greeting('sarah') == 'hello sarah'
+```
+
+```{dropdown} why did it break? 
+That function does not return anything, but it does something, so if we wanted to test it, it's hard. 
+
+It does *do* something so that is called **side effect**. 
+```
+<!-- ````
+
+`````` -->
+
+A better function would **return** the greeting instead of printing it; this is more versatile (it can be used in more different ways) and easier to write automated tests for. 
+
+```
+def greeting(name):
+    '''
+    greet a specific person
+
+    Parameters
+    ----------
+    name: string
+        name of person to greet
+    
+    '''
+    return 'hello ' +  name
+```
+
+
+Now lets write our disparate impact function. 
+I'll give you the template, You fill in the body
+
+```
+def disparate_impact_score(advantaged_score, disadvantaged_score):
+    '''
+    calculate DI ratio of advantaged:disadvantaged
+
+    Parameters
+    ----------
+    advantaged_score : float
+        score for advantaged group
+    disadvantaged_score : float
+        score for disadvantaged group
+    
+    Returns
+    -------
+    di_ratio : float
+        disparate impact score
+    '''
+     
+```
+
+Now apply the disparate impact score to the real world outcomes and the COMPAS score.  Does that make you think COMPAS is fair or not? 
