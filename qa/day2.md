@@ -49,7 +49,7 @@ Answer: Honestly the hardest part about freshman year is time management and mak
         because the classes for CS is relatively easy your first year.
 
 ## ‟what is the hardest coding language, that we are going to learn”
-Answer: The hardest language honestly depends on you, because everyone's brain works different and you might pick up one language easily
+Answer: The hardest language honestly depends on you, because everyone's brain works different and you might pick up some languages easily
         while struggling a bit for others.
 
 ## ‟In what jobs would a BS degree be better than a BA”
