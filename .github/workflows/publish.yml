@@ -24,10 +24,6 @@ jobs:
       run: |
         pip install -r requirements.txt
 
-    - name: get required files
-      run: |
-        bash files.sh
-
     # Build book
     - name: Build the book
       run: |
