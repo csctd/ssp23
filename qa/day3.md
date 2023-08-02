@@ -25,3 +25,11 @@ and recommend answers for you . But in general when you forget to do something g
 search through stack overflow ,youtube and other sites to find the answer your looking for expecially if its only synthax
 (how to write it) and not logic . But its important to remember that these tools are just meant to help you get started with 
 your programs not write it all for you . 
+## Question 
+‟how do you make a pie graph?”
+### answer 
+ - 'pie' : pie plot ; however a pie chart requires either y column or 'subplots=True'
+## Question 
+
+### answer
+   
