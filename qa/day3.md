@@ -30,6 +30,7 @@ your programs not write it all for you .
 ### answer 
  - 'pie' : pie plot ; however a pie chart requires either y column or 'subplots=True'
 ## Question 
-
+‟I dont get how "race_score_recid.T.plot(kind='bar')" graph is like completely different than "race_score_recid.plot(kind='bar')"”
 ### answer
+The .t transposes the graph so essentially it flips the graph so the graph will come out looking very different 
    
