@@ -2,9 +2,9 @@
 
 ## Question 
 
-## if confused on something that u did and didnt post in the chat 
-## room how do i study that part while studying and also i thought variables 
-## start with "var" is that a different language 
+### if confused on something that u did and didnt post in the chat 
+### room how do i study that part while studying and also i thought variables 
+### start with "var" is that a different language 
 
 ## answer 
 
