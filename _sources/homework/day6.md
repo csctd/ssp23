@@ -6,6 +6,7 @@
 4. Add a new file called `pechakucha.md` and add a title (markdown H1) to it
 5. use the [markdown cheatsheet](https://www.markdownguide.org/cheat-sheet/) to add images to your `pechakucha.md`
 6. In `index.md` uncomment lines about the menu
+7. Commit and sync your changes on GitHub so that they go through to your rendered website. 
 
 
 ## Index.md example

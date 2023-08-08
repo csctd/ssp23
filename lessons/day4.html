@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>11. Programming Tips and Study Skills &#8212; GitHub Flow and CS Thinking</title>
+    <title>Git, GitHub, and a Jupyter Book &#8212; GitHub Flow and CS Thinking</title>
   
   
   
@@ -60,11 +60,9 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'tl/day3';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'lessons/day4';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="13. Q&amp;A day 1" href="../qa/day1.html" />
-    <link rel="prev" title="10. Parsing Assignments" href="day2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -161,10 +159,10 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homework/day7.html">8. Design Theory Practice</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thinking and Learning Tips</span></p>
-<ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="day1.html">9. Reading Strategies</a></li>
-<li class="toctree-l1"><a class="reference internal" href="day2.html">10. Parsing Assignments</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">11. Programming Tips and Study Skills</a></li>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../tl/day1.html">9. Reading Strategies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tl/day2.html">10. Parsing Assignments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tl/day3.html">11. Programming Tips and Study Skills</a></li>
 
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Q &amp; A</span></p>
@@ -226,7 +224,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/tl/day3.md" target="_blank"
+      <li><a href="../_sources/lessons/day4.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -308,7 +306,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Programming Tips and Study Skills</h1>
+    <h1>Git, GitHub, and a Jupyter Book</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -318,29 +316,21 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">11. Programming Tips and Study Skills</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-did-yesterday-s-homework-relate-to-today-s-class">11.1. How did yesterday’s homework relate to today’s class?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#student-generated-tips">11.2. Student Generated Tips</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-1-1pm">11.2.1. Group 1 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-2-1pm">11.2.2. Group 2 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-3-1pm">11.2.3. Group 3 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-4-1pm">11.2.4. Group 4 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-5-1pm">11.2.5. Group 5 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-1-3pm">11.2.6. Group 1 - 3pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-2-3pm">11.2.7. Group 2 - 3pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-3-3pm">11.2.8. Group 3 - 3pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-4-3pm">11.2.9. Group 4 - 3pm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-re-going-to-do">What we’re going to do</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git">What is git?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-version-control">Distributed Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">Version Control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed">Distributed</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-your-notebooks">Sharing your notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-the-repo">Examining the repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-an-issue">Making an issue.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-your-site-your-own">Make your site your own</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-notebooks">Adding Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-codespaces">GitHub Codespaces</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-5-3pm">12. Group 5 - 3pm</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#group-6-3pm">12.1. Group 6 - 3pm</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-top-tips">12.2. Summary - Top Tips</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -351,134 +341,104 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="programming-tips-and-study-skills">
-<h1><span class="section-number">11. </span>Programming Tips and Study Skills<a class="headerlink" href="#programming-tips-and-study-skills" title="Permalink to this headline">#</a></h1>
-<p>a little bit of <a class="reference external" href="https://www.merriam-webster.com/dictionary/metacognition">metacognition</a></p>
-<p>For more on debugging, <a class="reference external" href="https://jvns.ca/">julia evans</a> is a professional devleoper and the author of <a class="reference external" href="https://wizardzines.com/">wizard zines</a></p>
-<section id="how-did-yesterday-s-homework-relate-to-today-s-class">
-<h2><span class="section-number">11.1. </span>How did yesterday’s homework relate to today’s class?<a class="headerlink" href="#how-did-yesterday-s-homework-relate-to-today-s-class" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="git-github-and-a-jupyter-book">
+<h1>Git, GitHub, and a Jupyter Book<a class="headerlink" href="#git-github-and-a-jupyter-book" title="Permalink to this headline">#</a></h1>
+<section id="what-we-re-going-to-do">
+<h2>What we’re going to do<a class="headerlink" href="#what-we-re-going-to-do" title="Permalink to this headline">#</a></h2>
+<p>Today, we’re going to focus on an important tool in programming, git, and we’ll use it via GitHub.</p>
+</section>
+<section id="what-is-github">
+<h2>What is GitHub?<a class="headerlink" href="#what-is-github" title="Permalink to this headline">#</a></h2>
+<p>Let’s learn from the source: <a class="reference external" href="https://github.com/about">about</a></p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>I know this material, but I want you to see the official refernce. Other internet sources will give all sorts of other interpretations, but what GitHub says, is the most official*</p>
+</div>
+</aside>
+</section>
+<section id="what-is-git">
+<h2>What is git?<a class="headerlink" href="#what-is-git" title="Permalink to this headline">#</a></h2>
+<p><a class="reference external" href="https://git-scm.com/">git</a> is:</p>
+<ul class="simple">
+<li><p>free</p></li>
+<li><p>open source</p></li>
+<li><p>distributed version control system</p></li>
+<li><p>designed to be fast</p></li>
+<li><p>flexible and can be used many ways</p></li>
+<li><p>not tied only to github!</p></li>
+</ul>
+</section>
+<section id="distributed-version-control">
+<h2>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">#</a></h2>
+<section id="version-control">
+<h3>Version Control<a class="headerlink" href="#version-control" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>~like history on a google doc</p></li>
+<li><p>keeps “versions” at points in time you get to pick</p></li>
+<li><p>lets you make test changes without breaking your main copy</p></li>
+<li></li>
+</ul>
+</section>
+<section id="distributed">
+<h3>Distributed<a class="headerlink" href="#distributed" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>good for collaboration</p></li>
+<li><p>everyone gets their own copy</p></li>
+<li><p>programatic tools <strong>and</strong> social conventions to help you not mess it up</p></li>
+</ul>
+</section>
+</section>
+<section id="sharing-your-notebooks">
+<h2>Sharing your notebooks<a class="headerlink" href="#sharing-your-notebooks" title="Permalink to this headline">#</a></h2>
+<p>We will make a repository for your notebooks that allows them to become a portfolio.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you are making up class, see prismia for the links</p>
+</div>
+</section>
+<section id="examining-the-repo">
+<h2>Examining the repo<a class="headerlink" href="#examining-the-repo" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://yaml.org/">YAML</a> files contain settings for various tools.  ours have extenstion .yml and are used to tell GitHub how to turn this repo into a website. One is written for GitHub specifically and the other is for a program called <a class="reference external" href="https://jupyterbook.org/">jupyter book</a> that can convert markdown and notebooks to HTML and provide helpful CSS for them.</p></li>
+<li><p><a class="reference external" href="http://README.md">README.md</a> is a special markdown file for GitHub</p></li>
+<li><p><a class="reference external" href="http://index.md">index.md</a> is the first content file for your project</p></li>
+<li><p>.gitignore is a list of files and type of files that the git program should not track changes in</p></li>
+</ul>
+</section>
+<section id="making-an-issue">
+<h2>Making an issue.<a class="headerlink" href="#making-an-issue" title="Permalink to this headline">#</a></h2>
+<p>Make the title: <code class="docutils literal notranslate"><span class="pre">Portfolio</span> <span class="pre">Start</span></code></p>
+<p>put this in the body</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## By noon on Friday: </span>
+<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">upload</span> <span class="n">each</span> <span class="n">notebook</span> <span class="n">file</span>
+<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">edit</span> <span class="n">the</span> <span class="n">intro</span>
+<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">turn</span> <span class="n">on</span> <span class="s2">&quot;pages&quot;</span> <span class="n">to</span> <span class="n">deploy</span> <span class="kn">from</span> <span class="nn">branch</span>
+
+<span class="c1">## When you want</span>
+<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">clean</span> <span class="n">up</span> <span class="n">your</span> <span class="n">notebooks</span> <span class="n">by</span> <span class="n">adding</span> <span class="n">more</span> <span class="n">text</span>
+<span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="o">*</span><span class="n">optionally</span><span class="o">*</span> <span class="p">[</span><span class="n">transfer</span> <span class="n">ownership</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">docs</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">en</span><span class="o">/</span><span class="n">repositories</span><span class="o">/</span><span class="n">creating</span><span class="o">-</span><span class="ow">and</span><span class="o">-</span><span class="n">managing</span><span class="o">-</span><span class="n">repositories</span><span class="o">/</span><span class="n">transferring</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">repository</span><span class="p">)</span> <span class="n">of</span> <span class="n">the</span> <span class="n">repo</span> <span class="n">to</span> <span class="n">yourself</span> <span class="ow">and</span> <span class="n">keep</span> <span class="n">adding</span> <span class="n">to</span> <span class="n">it</span>
+</pre></div>
+</div>
+<p>GitHub issues use a special flavor of markdown, the <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code> is not supported the same way everywhere, for example in prismia, that is how I make multiple choice questions for you.</p>
+<p>this <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">markdown cheatsheet</a> is a good reference while you get used to it.</p>
+</section>
+<section id="make-your-site-your-own">
+<h2>Make your site your own<a class="headerlink" href="#make-your-site-your-own" title="Permalink to this headline">#</a></h2>
+<p>Edit the top of the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file to have your own information in it</p>
+<p>Set your site to <a class="reference external" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch">serve from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch</a></p>
+</section>
+<section id="adding-notebooks">
+<h2>Adding Notebooks<a class="headerlink" href="#adding-notebooks" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
-<li><p>the preview: we used groupby and I explained it some, but in less detail, more through example than the reading</p></li>
-<li><p>calculating percentages: the homework had you review something I thought you should know from high school, but it maybe was not fresh in your mind.  Doing it in the homework  made it fresh for all of you.</p></li>
+<li><p>On JupyterHub, download one of your notebooks</p></li>
+<li><p>Upload it to GitHub</p></li>
 </ol>
 </section>
-<section id="student-generated-tips">
-<h2><span class="section-number">11.2. </span>Student Generated Tips<a class="headerlink" href="#student-generated-tips" title="Permalink to this headline">#</a></h2>
-<p>The following are all of the ones that students put together in the list:</p>
-<section id="group-1-1pm">
-<h3><span class="section-number">11.2.1. </span>Group 1 - 1pm<a class="headerlink" href="#group-1-1pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>there’s more than one way to solve a problem</p></li>
-<li><p>add comments to understand what your code is doing</p></li>
-<li><p>Learning how to code different kinds of graphs</p></li>
-<li><p>Having to actully think and problem solve</p></li>
-<li><p>Being able to solve the same problem in different ways</p></li>
-</ul>
-</section>
-<section id="group-2-1pm">
-<h3><span class="section-number">11.2.2. </span>Group 2 - 1pm<a class="headerlink" href="#group-2-1pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>run every code first before adding more into the bar (to make sure it is working properly, and if its not you can fix why the code isnt working rather than fixing the whole entire code from scratch)</p></li>
-<li><p>Looking at the type of error to figure out what mistake you made.</p></li>
-<li><p>There’s a certain tool that can help you figure out the code if you ever forget it.</p></li>
-<li><p>Studying in college is way more important you cant bullshit like last year.</p></li>
-</ul>
-</section>
-<section id="group-3-1pm">
-<h3><span class="section-number">11.2.3. </span>Group 3 - 1pm<a class="headerlink" href="#group-3-1pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Seeing how coding works, getting a feel for how it will be in the fall.</p></li>
-<li><p>Writing notes in between your code is very helpful</p></li>
-<li><p>looking at the last line when getting a syntax error can be very helpful</p></li>
-</ul>
-</section>
-<section id="group-4-1pm">
-<h3><span class="section-number">11.2.4. </span>Group 4 - 1pm<a class="headerlink" href="#group-4-1pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Syntax/formatting is very detailed.</p></li>
-<li><p>Make a list of key words</p></li>
-<li><p>previewing and preapring for lecture</p></li>
-<li><p>Take your coding piece by piece.</p></li>
-<li><p>Practice independently</p></li>
-<li><p>How to make headers for our titles</p></li>
-<li><p>Read over notes and explain the notes</p></li>
-<li><p>How to read python scripts</p></li>
-<li><p>The difference between code and markdown.</p></li>
-<li><p>Commenting in your code.</p></li>
-<li><p>Work with peers.</p></li>
-<li><p>Using the help provided with the IDE.</p></li>
-</ul>
-</section>
-<section id="group-5-1pm">
-<h3><span class="section-number">11.2.5. </span>Group 5 - 1pm<a class="headerlink" href="#group-5-1pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>General keyboard shortcuts</p></li>
-<li><p>Break codes down to pieces then re-plugging to make it shorter and be able to obtain the help menu</p></li>
-<li><p>Debugging until you see the mistake then go back and fix it.</p></li>
-<li><p>The precise logic that’s needed in terms of making the code run, but ways to read said logic and break it down</p></li>
-<li><p>The importance of previewing</p></li>
-</ul>
-</section>
-<section id="group-1-3pm">
-<h3><span class="section-number">11.2.6. </span>Group 1 - 3pm<a class="headerlink" href="#group-1-3pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Preview the class materiel before class.</p></li>
-<li><p>Go to office hours.</p></li>
-<li><p>Use the tool for when you are stuck with coding.</p></li>
-</ul>
-</section>
-<section id="group-2-3pm">
-<h3><span class="section-number">11.2.7. </span>Group 2 - 3pm<a class="headerlink" href="#group-2-3pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>getting error codes on incorrect codes so you can learn from your mistakes and being able to read the error on your message.</p></li>
-<li><p>preview and using what you might of seen in the preview in the next lesson</p></li>
-<li><p>skimming through articles finding what the teacher mainly wants you to look for</p></li>
-</ul>
-</section>
-<section id="group-3-3pm">
-<h3><span class="section-number">11.2.8. </span>Group 3 - 3pm<a class="headerlink" href="#group-3-3pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Break down tasks into smaller chunks</p></li>
-<li><p>Previewing before class</p></li>
-<li><p>Note taking</p></li>
-</ul>
-</section>
-<section id="group-4-3pm">
-<h3><span class="section-number">11.2.9. </span>Group 4 - 3pm<a class="headerlink" href="#group-4-3pm" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Previewing the information before class</p></li>
-<li><p>Reviewing what was leanred form the previous class and applying it to new material</p></li>
-<li><p>self testing codes that was learned in class</p></li>
-</ul>
-</section>
-</section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="group-5-3pm">
-<h1><span class="section-number">12. </span>Group 5 - 3pm<a class="headerlink" href="#group-5-3pm" title="Permalink to this headline">#</a></h1>
-<ul class="simple">
-<li><p>Previewing material before class</p></li>
-<li><p>Shift + Tab help menu</p></li>
-<li><p>Going through things slowly to make sure your code is corrrect instead of running all the code at once</p></li>
-<li><p>Take advantage of office hours</p></li>
-<li><p>Ask questions in class</p></li>
-</ul>
-<section id="group-6-3pm">
-<h2><span class="section-number">12.1. </span>Group 6 - 3pm<a class="headerlink" href="#group-6-3pm" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Previewing prior to class</p></li>
-<li><p>Reviewing after class</p></li>
-<li><p>Shift + Tab help menu</p></li>
-<li><p>Making sure you read through things slowly</p></li>
-<li><p>Using shift tab in between parentheses for when you need help</p></li>
-<li><p>Ask questions in class</p></li>
-</ul>
-</section>
-<section id="summary-top-tips">
-<h2><span class="section-number">12.2. </span>Summary - Top Tips<a class="headerlink" href="#summary-top-tips" title="Permalink to this headline">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>TBA</p>
-</div>
+<section id="github-codespaces">
+<h2>GitHub Codespaces<a class="headerlink" href="#github-codespaces" title="Permalink to this headline">#</a></h2>
+<p>Enter the Codespace</p>
 </section>
 </section>
 
@@ -495,7 +455,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./tl"
+            path: "./lessons"
         },
         predefinedOutput: true
     }
@@ -513,24 +473,6 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="day2.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><span class="section-number">10. </span>Parsing Assignments</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../qa/day1.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">13. </span>Q&amp;A day 1</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div></div>
   
 </div>
@@ -549,29 +491,21 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">11. Programming Tips and Study Skills</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-did-yesterday-s-homework-relate-to-today-s-class">11.1. How did yesterday’s homework relate to today’s class?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#student-generated-tips">11.2. Student Generated Tips</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-1-1pm">11.2.1. Group 1 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-2-1pm">11.2.2. Group 2 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-3-1pm">11.2.3. Group 3 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-4-1pm">11.2.4. Group 4 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-5-1pm">11.2.5. Group 5 - 1pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-1-3pm">11.2.6. Group 1 - 3pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-2-3pm">11.2.7. Group 2 - 3pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-3-3pm">11.2.8. Group 3 - 3pm</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#group-4-3pm">11.2.9. Group 4 - 3pm</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-re-going-to-do">What we’re going to do</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git">What is git?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-version-control">Distributed Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">Version Control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed">Distributed</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-your-notebooks">Sharing your notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-the-repo">Examining the repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-an-issue">Making an issue.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-your-site-your-own">Make your site your own</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-notebooks">Adding Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-codespaces">GitHub Codespaces</a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#group-5-3pm">12. Group 5 - 3pm</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#group-6-3pm">12.1. Group 6 - 3pm</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary-top-tips">12.2. Summary - Top Tips</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

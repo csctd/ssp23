@@ -1,5 +1,3 @@
-# More Data Science
-
 ---
 jupytext:
   text_representation:

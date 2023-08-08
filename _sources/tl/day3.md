@@ -1,5 +1,17 @@
 # Programming Tips and Study Skills
 
+a little bit of [metacognition](https://www.merriam-webster.com/dictionary/metacognition)
+
+For more on debugging, [julia evans](https://jvns.ca/) is a professional devleoper and the author of [wizard zines](https://wizardzines.com/)
+
+
+## How did yesterday's homework relate to today's class? 
+
+
+1. the preview: we used groupby and I explained it some, but in less detail, more through example than the reading
+2. calculating percentages: the homework had you review something I thought you should know from high school, but it maybe was not fresh in your mind.  Doing it in the homework  made it fresh for all of you. 
+
+
 ## Student Generated Tips
 The following are all of the ones that students put together in the list: 
 
