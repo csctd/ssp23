@@ -1,7 +1,5 @@
 # Data Science Portfolio
 
-# Homework
-
 ````{margin}
 ```{important}
 see prismia for links to the vocab
