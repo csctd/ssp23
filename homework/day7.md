@@ -6,6 +6,12 @@
 Work in your profile-website repository
 ```
 
+````{margin}
+```{hint}
+Remember that `<!-- a comment here -->` is a comment in HTML (anc therefore markdown). Be sure to remove it form the template so that your work is visible.
+```
+````
+
 1. Update your README using the Template below. Make a new branch called `design` and open a Pull Request. Title your PR `Design Theory` 
 1. Create an "Add Initial Content" issue on your profile-website repo. Include a checklist of content that you will want to add. 
 1. Create a "New features" issue on your profile website repo. Include a checklist of what features you want your site to have. 
