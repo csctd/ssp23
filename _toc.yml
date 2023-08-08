@@ -1,12 +1,15 @@
 format: jb-book
 root: index
 parts:
-  # - caption: Class Notes
-  #   chapters:
-    # - file: lab/prepare
-    # - file: lab/agenda
-    # - file: lab/keep-learning
+  - caption: Class Notes
+    chapters:
+    - file: lesson/day1
+    - file: lesson/day2
+    - file: lesson/day3
+    - file: lesson/day4
+    - file: lesson/day5
   - caption: Homework
+    numbered: True
     chapters:
     - file: homework/day1
     - file: homework/day2
@@ -16,11 +19,13 @@ parts:
     - file: homework/day6
     - file: homework/day7
   - caption: Thinking and Learning Tips
+    numbered: True
     chapters:
     - file: tl/day1
     - file: tl/day2
     - file: tl/day3
   - caption: Q & A
+    numbered: True
     chapters:
     - file: qa/day1
     - file: qa/day2

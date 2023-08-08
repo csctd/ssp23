@@ -48,7 +48,7 @@ We define functions in Python like this:
 ```Python
 def name_of_function(argument): # signature of function
     '''
-    decription of function
+    decription of function 
 
     Parameters
     ----------
@@ -64,12 +64,14 @@ def name_of_function(argument): # signature of function
     return value
 ```
 
+The long comment in the `'''` is called the docstring. 
+
 Write a function to print a greeting like this: 
 
 
 Hello World! 
 
-```
+```Python
 def greeting(name):
     '''
     greet a specific person
@@ -83,8 +85,20 @@ def greeting(name):
     print('hello', name)
 ```
 
+Call your function in  a new cell with 
+```
+greeting('Sarah')
+```
 
-Now try to check if it prints the right thing with 
+Does it do what you expect. Try a few other values.
+
+Use help on your funtion.  What does it show you?  How could you modify the help? 
+
+```{dropdown}
+It shows you the docstring. You can write whatever a person using your function would need there
+```
+
+Now try to check if it prints the right thing with a formal test using `assert`
 
 ```
 assert greeting('sarah') == 'hello sarah'
@@ -119,7 +133,7 @@ def greeting(name):
 Now lets write our disparate impact function. 
 I'll give you the template, You fill in the body
 
-```
+```Python
 def disparate_impact_score(advantaged_score, disadvantaged_score):
     '''
     calculate DI ratio of advantaged:disadvantaged
