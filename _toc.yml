@@ -2,6 +2,7 @@ format: jb-book
 root: index
 parts:
   - caption: Class Notes
+    numbered: True
     chapters:
     - file: lesson/day1
     - file: lesson/day2
@@ -24,6 +25,9 @@ parts:
     - file: tl/day1
     - file: tl/day2
     - file: tl/day3
+    - file: tl/day4
+    - file: tl/day5
+    - file: tl/day6
   - caption: Q & A
     numbered: True
     chapters:
