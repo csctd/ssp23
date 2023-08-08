@@ -11,6 +11,10 @@ parts:
     - file: homework/day1
     - file: homework/day2
     - file: homework/day3
+    - file: homework/day4
+    - file: homework/day5
+    - file: homework/day6
+    - file: homework/day7
   - caption: Thinking and Learning Tips
     chapters:
     - file: tl/day1
