@@ -5,9 +5,9 @@
 
 #######################################################################################
 # Book settings
-title                       : GitHub Flow and CS Thinking # The title of the book. Will be placed in the left navbar.
-author                      : Sarah M Brown # The author of the book
-copyright                   : "2022"  # Copyright year to be placed in the footer
+title                       : CS Problem Solving and Study Skills # The title of the book. Will be placed in the left navbar.
+author                      : Sarah M Brown, Samantha Armenti, Osman Barrie, Isaac Gbaba # The author of the book
+copyright                   : "2023"  # Copyright year to be placed in the footer
 logo                        : ""  # A path to the book logo
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", README.md]
@@ -78,7 +78,7 @@ launch_buttons:
   colab_url                 : "" # The URL of Google Colab (https://colab.research.google.com)
 
 repository:
-  url                       : https://github.com/ml4sts/outreach-gh-cs-thinking # The URL to your book's repository
+  url                       : https://github.com/csctd/ssp23 # The URL to your book's repository
   path_to_book              : ""  # A path to your book's folder, relative to the repository root.
   branch                    : master  # Which branch of the repository should be used when creating links
 
