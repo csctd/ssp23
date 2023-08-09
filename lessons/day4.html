@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Git, GitHub, and a Jupyter Book &#8212; CS Problem Solving and Study Skills</title>
+    <title>4. Git, GitHub, and a Jupyter Book &#8212; CS Problem Solving and Study Skills</title>
   
   
   
@@ -63,6 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons/day4';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Static Sites" href="day5.html" />
+    <link rel="prev" title="3. Replicating Propbulica’s COMPAS Audit" href="day3.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -147,7 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Class Notes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Jargon Busting &amp; What is CS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. What is Data Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Replicating Propbulica’s COMPAS Audit</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Git, GitHub, and a Jupyter Book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Static Sites</a></li>
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homework/day1.html">1. Day 1 Homework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day2.html">2. Homework and Prepare for next class</a></li>
@@ -156,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homework/day5.html">5. Profile Website</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day6.html">6. Add Pictures to your site</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day7.html">7. Design Theory Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/day8.html">8. Beginning your site customization</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thinking and Learning Tips</span></p>
 <ul class="nav bd-sidenav">
@@ -318,20 +332,20 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-re-going-to-do">What we’re going to do</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git">What is git?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-version-control">Distributed Version Control</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">Version Control</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed">Distributed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-re-going-to-do">4.1. What we’re going to do</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">4.2. What is GitHub?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git">4.3. What is git?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-version-control">4.4. Distributed Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">4.4.1. Version Control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed">4.4.2. Distributed</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-your-notebooks">Sharing your notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-the-repo">Examining the repo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-an-issue">Making an issue.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-your-site-your-own">Make your site your own</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-notebooks">Adding Notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-codespaces">GitHub Codespaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-your-notebooks">4.5. Sharing your notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-the-repo">4.6. Examining the repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-an-issue">4.7. Making an issue.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-your-site-your-own">4.8. Make your site your own</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-notebooks">4.9. Adding Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-codespaces">4.10. GitHub Codespaces</a></li>
 </ul>
             </nav>
         </div>
@@ -344,13 +358,13 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="git-github-and-a-jupyter-book">
-<h1>Git, GitHub, and a Jupyter Book<a class="headerlink" href="#git-github-and-a-jupyter-book" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">4. </span>Git, GitHub, and a Jupyter Book<a class="headerlink" href="#git-github-and-a-jupyter-book" title="Permalink to this headline">#</a></h1>
 <section id="what-we-re-going-to-do">
-<h2>What we’re going to do<a class="headerlink" href="#what-we-re-going-to-do" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.1. </span>What we’re going to do<a class="headerlink" href="#what-we-re-going-to-do" title="Permalink to this headline">#</a></h2>
 <p>Today, we’re going to focus on an important tool in programming, git, and we’ll use it via GitHub.</p>
 </section>
 <section id="what-is-github">
-<h2>What is GitHub?<a class="headerlink" href="#what-is-github" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.2. </span>What is GitHub?<a class="headerlink" href="#what-is-github" title="Permalink to this headline">#</a></h2>
 <p>Let’s learn from the source: <a class="reference external" href="https://github.com/about">about</a></p>
 <aside class="margin sidebar">
 <p class="sidebar-title"></p>
@@ -361,7 +375,7 @@ document.write(`
 </aside>
 </section>
 <section id="what-is-git">
-<h2>What is git?<a class="headerlink" href="#what-is-git" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.3. </span>What is git?<a class="headerlink" href="#what-is-git" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://git-scm.com/">git</a> is:</p>
 <ul class="simple">
 <li><p>free</p></li>
@@ -373,9 +387,9 @@ document.write(`
 </ul>
 </section>
 <section id="distributed-version-control">
-<h2>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.4. </span>Distributed Version Control<a class="headerlink" href="#distributed-version-control" title="Permalink to this headline">#</a></h2>
 <section id="version-control">
-<h3>Version Control<a class="headerlink" href="#version-control" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.4.1. </span>Version Control<a class="headerlink" href="#version-control" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>~like history on a google doc</p></li>
 <li><p>keeps “versions” at points in time you get to pick</p></li>
@@ -384,7 +398,7 @@ document.write(`
 </ul>
 </section>
 <section id="distributed">
-<h3>Distributed<a class="headerlink" href="#distributed" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">4.4.2. </span>Distributed<a class="headerlink" href="#distributed" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>good for collaboration</p></li>
 <li><p>everyone gets their own copy</p></li>
@@ -393,7 +407,7 @@ document.write(`
 </section>
 </section>
 <section id="sharing-your-notebooks">
-<h2>Sharing your notebooks<a class="headerlink" href="#sharing-your-notebooks" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.5. </span>Sharing your notebooks<a class="headerlink" href="#sharing-your-notebooks" title="Permalink to this headline">#</a></h2>
 <p>We will make a repository for your notebooks that allows them to become a portfolio.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -401,7 +415,7 @@ document.write(`
 </div>
 </section>
 <section id="examining-the-repo">
-<h2>Examining the repo<a class="headerlink" href="#examining-the-repo" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.6. </span>Examining the repo<a class="headerlink" href="#examining-the-repo" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://yaml.org/">YAML</a> files contain settings for various tools.  ours have extenstion .yml and are used to tell GitHub how to turn this repo into a website. One is written for GitHub specifically and the other is for a program called <a class="reference external" href="https://jupyterbook.org/">jupyter book</a> that can convert markdown and notebooks to HTML and provide helpful CSS for them.</p></li>
 <li><p><a class="reference external" href="http://README.md">README.md</a> is a special markdown file for GitHub</p></li>
@@ -410,7 +424,7 @@ document.write(`
 </ul>
 </section>
 <section id="making-an-issue">
-<h2>Making an issue.<a class="headerlink" href="#making-an-issue" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.7. </span>Making an issue.<a class="headerlink" href="#making-an-issue" title="Permalink to this headline">#</a></h2>
 <p>Make the title: <code class="docutils literal notranslate"><span class="pre">Portfolio</span> <span class="pre">Start</span></code></p>
 <p>put this in the body</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1">## By noon on Friday: </span>
@@ -427,19 +441,19 @@ document.write(`
 <p>this <a class="reference external" href="https://www.markdownguide.org/cheat-sheet/">markdown cheatsheet</a> is a good reference while you get used to it.</p>
 </section>
 <section id="make-your-site-your-own">
-<h2>Make your site your own<a class="headerlink" href="#make-your-site-your-own" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.8. </span>Make your site your own<a class="headerlink" href="#make-your-site-your-own" title="Permalink to this headline">#</a></h2>
 <p>Edit the top of the <code class="docutils literal notranslate"><span class="pre">_config.yml</span></code> file to have your own information in it</p>
 <p>Set your site to <a class="reference external" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site#publishing-from-a-branch">serve from the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch</a></p>
 </section>
 <section id="adding-notebooks">
-<h2>Adding Notebooks<a class="headerlink" href="#adding-notebooks" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.9. </span>Adding Notebooks<a class="headerlink" href="#adding-notebooks" title="Permalink to this headline">#</a></h2>
 <ol class="arabic simple">
 <li><p>On JupyterHub, download one of your notebooks</p></li>
 <li><p>Upload it to GitHub</p></li>
 </ol>
 </section>
 <section id="github-codespaces">
-<h2>GitHub Codespaces<a class="headerlink" href="#github-codespaces" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">4.10. </span>GitHub Codespaces<a class="headerlink" href="#github-codespaces" title="Permalink to this headline">#</a></h2>
 <p>Enter the Codespace</p>
 </section>
 </section>
@@ -475,6 +489,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="day3.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Replicating Propbulica’s COMPAS Audit</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="day5.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Static Sites</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -493,20 +525,20 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-re-going-to-do">What we’re going to do</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">What is GitHub?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git">What is git?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-version-control">Distributed Version Control</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">Version Control</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed">Distributed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-re-going-to-do">4.1. What we’re going to do</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-github">4.2. What is GitHub?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-git">4.3. What is git?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed-version-control">4.4. Distributed Version Control</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#version-control">4.4.1. Version Control</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distributed">4.4.2. Distributed</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-your-notebooks">Sharing your notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-the-repo">Examining the repo</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-an-issue">Making an issue.</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-your-site-your-own">Make your site your own</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-notebooks">Adding Notebooks</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-codespaces">GitHub Codespaces</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-your-notebooks">4.5. Sharing your notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examining-the-repo">4.6. Examining the repo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#making-an-issue">4.7. Making an issue.</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#make-your-site-your-own">4.8. Make your site your own</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adding-notebooks">4.9. Adding Notebooks</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#github-codespaces">4.10. GitHub Codespaces</a></li>
 </ul>
   </nav></div>
 

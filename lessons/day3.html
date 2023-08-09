@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Replicating Propbulica’s COMPAS Audit &#8212; CS Problem Solving and Study Skills</title>
+    <title>3. Replicating Propbulica’s COMPAS Audit &#8212; CS Problem Solving and Study Skills</title>
   
   
   
@@ -63,6 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons/day3';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Git, GitHub, and a Jupyter Book" href="day4.html" />
+    <link rel="prev" title="2. What is Data Science" href="day2.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -147,7 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Class Notes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Jargon Busting &amp; What is CS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. What is Data Science</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">3. Replicating Propbulica’s COMPAS Audit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Git, GitHub, and a Jupyter Book</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day5.html">5. Static Sites</a></li>
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homework/day1.html">1. Day 1 Homework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day2.html">2. Homework and Prepare for next class</a></li>
@@ -156,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homework/day5.html">5. Profile Website</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day6.html">6. Add Pictures to your site</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day7.html">7. Design Theory Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/day8.html">8. Beginning your site customization</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thinking and Learning Tips</span></p>
 <ul class="nav bd-sidenav">
@@ -318,9 +332,9 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-the-set-index-do">What does the <code class="docutils literal notranslate"><span class="pre">set_index</span></code> do?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-statistics">Computing Statistics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-by-race">Plotting by race</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-the-set-index-do">3.1. What does the <code class="docutils literal notranslate"><span class="pre">set_index</span></code> do?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-statistics">3.2. Computing Statistics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-by-race">3.3. Plotting by race</a></li>
 </ul>
             </nav>
         </div>
@@ -333,7 +347,7 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="replicating-propbulica-s-compas-audit">
-<h1>Replicating Propbulica’s COMPAS Audit<a class="headerlink" href="#replicating-propbulica-s-compas-audit" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">3. </span>Replicating Propbulica’s COMPAS Audit<a class="headerlink" href="#replicating-propbulica-s-compas-audit" title="Permalink to this headline">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
@@ -381,7 +395,7 @@ document.write(`
 </div>
 </div>
 <section id="what-does-the-set-index-do">
-<h2>What does the <code class="docutils literal notranslate"><span class="pre">set_index</span></code> do?<a class="headerlink" href="#what-does-the-set-index-do" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.1. </span>What does the <code class="docutils literal notranslate"><span class="pre">set_index</span></code> do?<a class="headerlink" href="#what-does-the-set-index-do" title="Permalink to this headline">#</a></h2>
 <p>How can you figure out what it does from code only?</p>
 <p>To figure out, we can re-run the load data without <code class="docutils literal notranslate"><span class="pre">set_index</span></code></p>
 <div class="cell docutils container">
@@ -394,7 +408,7 @@ document.write(`
 <p>If we compare this to the one above, we note that when we use <code class="docutils literal notranslate"><span class="pre">set_index('id')</span></code> the <code class="docutils literal notranslate"><span class="pre">'id'</span></code> column is treated idffeerntly</p>
 </section>
 <section id="computing-statistics">
-<h2>Computing Statistics<a class="headerlink" href="#computing-statistics" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.2. </span>Computing Statistics<a class="headerlink" href="#computing-statistics" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;decile_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
@@ -412,7 +426,7 @@ document.write(`
 </div>
 </section>
 <section id="plotting-by-race">
-<h2>Plotting by race<a class="headerlink" href="#plotting-by-race" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">3.3. </span>Plotting by race<a class="headerlink" href="#plotting-by-race" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;race&#39;</span><span class="p">)[</span><span class="s1">&#39;decile_score&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
@@ -604,6 +618,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="day2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>What is Data Science</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="day4.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Git, GitHub, and a Jupyter Book</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -622,9 +654,9 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-the-set-index-do">What does the <code class="docutils literal notranslate"><span class="pre">set_index</span></code> do?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-statistics">Computing Statistics</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-by-race">Plotting by race</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-does-the-set-index-do">3.1. What does the <code class="docutils literal notranslate"><span class="pre">set_index</span></code> do?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-statistics">3.2. Computing Statistics</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#plotting-by-race">3.3. Plotting by race</a></li>
 </ul>
   </nav></div>
 

@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Static Sites &#8212; CS Problem Solving and Study Skills</title>
+    <title>5. Static Sites &#8212; CS Problem Solving and Study Skills</title>
   
   
   
@@ -63,6 +63,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'lessons/day5';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="1. Day 1 Homework" href="../homework/day1.html" />
+    <link rel="prev" title="4. Git, GitHub, and a Jupyter Book" href="day4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -147,7 +149,18 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Class Notes</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="day1.html">1. Jargon Busting &amp; What is CS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day2.html">2. What is Data Science</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day3.html">3. Replicating Propbulica’s COMPAS Audit</a></li>
+<li class="toctree-l1"><a class="reference internal" href="day4.html">4. Git, GitHub, and a Jupyter Book</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Static Sites</a></li>
+
+
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Homework</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../homework/day1.html">1. Day 1 Homework</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day2.html">2. Homework and Prepare for next class</a></li>
@@ -156,6 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="../homework/day5.html">5. Profile Website</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day6.html">6. Add Pictures to your site</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../homework/day7.html">7. Design Theory Practice</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../homework/day8.html">8. Beginning your site customization</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Thinking and Learning Tips</span></p>
 <ul class="nav bd-sidenav">
@@ -318,12 +332,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Static Sites</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#static-site-generation">Static site generation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">Hello World</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-and-static-site-generation">GitHub and Static Site Generation</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codespaces-theme-settings">Codespaces theme settings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">Homework</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Static Sites</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#static-site-generation">6. Static site generation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">7. Hello World</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-and-static-site-generation">8. GitHub and Static Site Generation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codespaces-theme-settings">8.1. Codespaces theme settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">8.2. Homework</a></li>
 </ul>
 </li>
 </ul>
@@ -339,10 +353,10 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="static-sites">
-<h1>Static Sites<a class="headerlink" href="#static-sites" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">5. </span>Static Sites<a class="headerlink" href="#static-sites" title="Permalink to this headline">#</a></h1>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="static-site-generation">
-<h1>Static site generation<a class="headerlink" href="#static-site-generation" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">6. </span>Static site generation<a class="headerlink" href="#static-site-generation" title="Permalink to this headline">#</a></h1>
 <ol class="arabic simple">
 <li><p>make final repo</p></li>
 <li><p>modify a few pages</p></li>
@@ -355,7 +369,7 @@ document.write(`
 </ol>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="hello-world">
-<h1>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">7. </span>Hello World<a class="headerlink" href="#hello-world" title="Permalink to this headline">#</a></h1>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/%22Hello,_World!%22_program">hello world</a> is usually how we start teaching new programming languages.</p>
 <p>Python can be used many ways.  Instead of a new notebook, click on console of python</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello world&#39;</span><span class="p">)</span>
@@ -385,7 +399,7 @@ document.write(`
 <p>Today we will use a browser-based version of <a class="reference external" href="https://code.visualstudio.com/">VS Code</a> via GitHub CodeSpaces and we will work with both a website and some Python.</p>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="github-and-static-site-generation">
-<h1>GitHub and Static Site Generation<a class="headerlink" href="#github-and-static-site-generation" title="Permalink to this headline">#</a></h1>
+<h1><span class="section-number">8. </span>GitHub and Static Site Generation<a class="headerlink" href="#github-and-static-site-generation" title="Permalink to this headline">#</a></h1>
 <p>GitHub actions allow us to run programs that process our code.</p>
 <p>Typically this is something like:</p>
 <ul class="simple">
@@ -417,12 +431,12 @@ document.write(`
 <p>Push to GitHub on a branch
 Leave your PR there, we’ll come back next week</p>
 <section id="codespaces-theme-settings">
-<h2>Codespaces theme settings<a class="headerlink" href="#codespaces-theme-settings" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.1. </span>Codespaces theme settings<a class="headerlink" href="#codespaces-theme-settings" title="Permalink to this headline">#</a></h2>
 <p>In the very bottom left, click the gear, choose Theme, then color theme.  You can select a theme from the list, or search for others.</p>
 <p>You can also <a class="reference external" href="https://docs.github.com/en/codespaces/customizing-your-codespace/setting-your-default-editor-for-github-codespaces">set your default theme for all projects</a></p>
 </section>
 <section id="homework">
-<h2>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
+<h2><span class="section-number">8.2. </span>Homework<a class="headerlink" href="#homework" title="Permalink to this headline">#</a></h2>
 <p>add any two images to you <code class="docutils literal notranslate"><span class="pre">_static/img/</span></code> folder in your <code class="docutils literal notranslate"><span class="pre">profile-website</span></code> repo</p>
 </section>
 </section>
@@ -458,6 +472,24 @@ Leave your PR there, we’ll come back next week</p>
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="day4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Git, GitHub, and a Jupyter Book</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../homework/day1.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Day 1 Homework</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -476,12 +508,12 @@ Leave your PR there, we’ll come back next week</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Static Sites</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#static-site-generation">Static site generation</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">Hello World</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-and-static-site-generation">GitHub and Static Site Generation</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codespaces-theme-settings">Codespaces theme settings</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">Homework</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">5. Static Sites</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#static-site-generation">6. Static site generation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#hello-world">7. Hello World</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#github-and-static-site-generation">8. GitHub and Static Site Generation</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#codespaces-theme-settings">8.1. Codespaces theme settings</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#homework">8.2. Homework</a></li>
 </ul>
 </li>
 </ul>
