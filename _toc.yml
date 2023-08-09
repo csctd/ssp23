@@ -4,11 +4,11 @@ parts:
   - caption: Class Notes
     numbered: True
     chapters:
-    - file: lesson/day1
-    - file: lesson/day2
-    - file: lesson/day3
-    - file: lesson/day4
-    - file: lesson/day5
+    - file: lessons/day1
+    - file: lessons/day2
+    - file: lessons/day3
+    - file: lessons/day4
+    - file: lessons/day5
   - caption: Homework
     numbered: True
     chapters:
@@ -19,6 +19,7 @@ parts:
     - file: homework/day5
     - file: homework/day6
     - file: homework/day7
+    - file: homework/day8
   - caption: Thinking and Learning Tips
     numbered: True
     chapters:
