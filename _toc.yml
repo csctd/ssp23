@@ -20,6 +20,7 @@ parts:
     - file: homework/day6
     - file: homework/day7
     - file: homework/day8
+    - file: homework/day9
   - caption: Thinking and Learning Tips
     numbered: True
     chapters:
