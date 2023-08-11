@@ -30,6 +30,8 @@ We are behind getting the Q&A answered, but will add them
 - Design theory questions all answered in your profile-website readme (day 7)
 - Issues for work created, completed, and closed by merged PRs or marked not planned linked to replacing issues including a sitemap and wireframe (days 7,8,10-12)
 - additional content and styling working on your profile website
+- web critic worksheet complete
+- css-mystery activity complete and feedback addressed
 
 ### Satisfactory - 
 
@@ -44,6 +46,8 @@ We are behind getting the Q&A answered, but will add them
 - Design theory questions attempted in your profile-website readme (day 7)
 - issues for content and features at least created with some content (days 7,8,10-12)
 - additional content and styling attempted on your profile website
+- web critic worksheet attempted
+- css-mystery activity complete 
 
 ### Fail
 
