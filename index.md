@@ -32,6 +32,8 @@ We are behind getting the Q&A answered, but will add them
 - additional content and styling working on your profile website
 - web critic worksheet complete
 - css-mystery activity complete and feedback addressed
+- html & css crescendo complete and feedback addresssed
+- completed at least 6 reflections (6/8)
 
 ### Satisfactory - 
 
@@ -47,7 +49,9 @@ We are behind getting the Q&A answered, but will add them
 - issues for content and features at least created with some content (days 7,8,10-12)
 - additional content and styling attempted on your profile website
 - web critic worksheet attempted
-- css-mystery activity complete 
+- css-mystery activity complete
+- html & css crescendo complete
+- completed at least 4 reflections (4/8)
 
 ### Fail
 
