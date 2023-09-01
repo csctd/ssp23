@@ -21,6 +21,10 @@ parts:
     - file: homework/day7
     - file: homework/day8
     - file: homework/day9
+    - file: homework/day10
+    - file: homework/day11
+    - file: homework/day12
+    - file: homework/day13
   - caption: Thinking and Learning Tips
     numbered: True
     chapters:
@@ -30,6 +34,13 @@ parts:
     - file: tl/day4
     - file: tl/day5
     - file: tl/day6
+    - file: tl/day7
+    - file: tl/day8
+    - file: tl/day9
+    - file: tl/day10
+    - file: tl/day11
+    - file: tl/day12
+    - file: tl/day13
   - caption: Q & A
     numbered: True
     chapters:
